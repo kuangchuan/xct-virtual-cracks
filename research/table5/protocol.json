@@ -1,0 +1,71 @@
+{
+  "annotation_date": "2026-11-10",
+  "seeds": [
+    271,
+    811,
+    1459,
+    2027,
+    4099
+  ],
+  "materials": [
+    "mortar",
+    "recycled_mortar",
+    "gfrp",
+    "sic"
+  ],
+  "arms": [
+    "virtual",
+    "real14",
+    "virtual_real14",
+    "virtual_real7",
+    "virtual_real4"
+  ],
+  "training_runs": 100,
+  "fixed_validation_ordinals": [
+    2,
+    5,
+    8,
+    12,
+    16,
+    19
+  ],
+  "common": {
+    "patch_size": 256,
+    "batch_size": 4,
+    "updates_per_epoch": 20,
+    "weight_decay": 0.0001,
+    "loss": "Soft cross-entropy plus soft Dice; binary real targets or synthetic area-coverage targets with validity masks.",
+    "augmentation": "Paired native integer translations up to 25 pixels, rotations/flips, gamma/gain/offset changes and noise; original V46.2 sampler policy.",
+    "normalisation": "Existing native cache with specimen-envelope 0.5th\u201399.5th percentile normalisation; GFRP adds local contrast channels at 9 and 31 pixels; other materials use a single channel.",
+    "threshold": 0.5
+  },
+  "from_scratch": {
+    "learning_rate": 0.001,
+    "max_epochs": 260,
+    "min_epochs": 80,
+    "patience": 30
+  },
+  "finetune": {
+    "learning_rate": 0.0001,
+    "max_epochs": 260,
+    "min_epochs": 40,
+    "patience": 20
+  },
+  "new_training_runs": 80,
+  "reused_real_only_runs": 20,
+  "batch_size": 4,
+  "annotation_manifest_sha256": "f9cd431a89a48ab486cdcc29bcd5462c8e33489b5b20d3631f3e372e752b57d6",
+  "sources_sha256": "c51aa918e5782ca478d63e37b55e9656903f596832a64f6e00f107c96f50a9aa",
+  "validation_windows.json_sha256": "77f07ed0a5076611afde4cf9b6c801fa751e87202391a33d6fe6509108032614",
+  "fixed_split.csv_sha256": "46b26dcfd37740a6c069bd6e52ab66949251b541e0e622b045cccd3989f282da",
+  "label_manifest.csv_sha256": "66977222f963abc5035ba3f73f1837ebc7a49696f4b65dae47daa379c39a167f",
+  "experiment_id": "20261113_updated14_val6_table_v1",
+  "manuscript_version": "vn46",
+  "statistics": "Arithmetic mean and sample standard deviation (ddof=1) over all five independent seeds; no runs excluded.",
+  "fitting": "14 fitting images per material, with fixed nested 7- and 4-image subsets; identical subsets across seeds.",
+  "independence": "Five independently initialised virtual models per material; each fine-tuning run starts from its own seed-matched virtual model.",
+  "generator": "35% original no-new-injection controls. Among positive examples: 80% original V45, 10% original geometry with extended grey rendering, 10% extended geometry with extended grey rendering. No fitting-label-selected real backgrounds in virtual pretraining.",
+  "validation": "Same six real images per material select checkpoints; final full-native-image inference uses 256-pixel windows, 128-pixel stride, Hann overlap and threshold 0.5. Confusion counts are pooled across the six images before mIoU is computed.",
+  "scope": "Development validation on correlated slices from the same acquisitions, not an independent test; total pretraining-plus-adaptation compute differs from real-only training.",
+  "schedule_change": "Fine-tuning cap 260 epochs, versus 120 in the preceding comparison. This is not a generator-only causal ablation."
+}

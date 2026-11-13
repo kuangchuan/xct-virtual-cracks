@@ -1,0 +1,84 @@
+{
+  "purpose": "Original implementation snapshots for provenance. Workstation-dependent historical scripts; use the portable package for new demonstrations. One status-page text is translated into English.",
+  "files": [
+    {
+      "source_path": "notebooks/optimized_four_material_training/Optimized_Crack_Engine.py",
+      "snapshot_path": "research/table5/code_snapshot/Optimized_Crack_Engine.py",
+      "sha256": "deb9f719c09b883a6c2007db1deca87cbf9a13ab8a99376822f5e501cebb85f5",
+      "source_sha256": "deb9f719c09b883a6c2007db1deca87cbf9a13ab8a99376822f5e501cebb85f5",
+      "changes": []
+    },
+    {
+      "source_path": "notebooks/optimized_four_material_training/image_guided_cracks.py",
+      "snapshot_path": "research/table5/code_snapshot/image_guided_cracks.py",
+      "sha256": "32224b61d824653b799a13fafa924124d59350f1387107f9b7647386672b415a",
+      "source_sha256": "32224b61d824653b799a13fafa924124d59350f1387107f9b7647386672b415a",
+      "changes": []
+    },
+    {
+      "source_path": "notebooks/optimized_four_material_training/robust_structure_cracks.py",
+      "snapshot_path": "research/table5/code_snapshot/robust_structure_cracks.py",
+      "sha256": "ce222b262dc63a4d0f9351752b1b0effe5addbdf6556303822fd215f3645fc4c",
+      "source_sha256": "ce222b262dc63a4d0f9351752b1b0effe5addbdf6556303822fd215f3645fc4c",
+      "changes": []
+    },
+    {
+      "source_path": "notebooks/optimized_four_material_training/xct_preview_io.py",
+      "snapshot_path": "research/table5/code_snapshot/xct_preview_io.py",
+      "sha256": "b6f1f0f380556f515d302343e732ad4b82ee2ea50bb63e7c92c9c382f6dc837b",
+      "source_sha256": "b6f1f0f380556f515d302343e732ad4b82ee2ea50bb63e7c92c9c382f6dc837b",
+      "changes": []
+    },
+    {
+      "source_path": "notebooks/optimized_four_material_training/GFRP_Context_Study.py",
+      "snapshot_path": "research/table5/code_snapshot/GFRP_Context_Study.py",
+      "sha256": "b1a3f89e83cbb8b63a28a829c0643af9707c15fe6dd4501562daaff8ed0ad085",
+      "source_sha256": "b1a3f89e83cbb8b63a28a829c0643af9707c15fe6dd4501562daaff8ed0ad085",
+      "changes": []
+    },
+    {
+      "source_path": "notebooks/optimized_four_material_training/Refined_Training.py",
+      "snapshot_path": "research/table5/code_snapshot/Refined_Training.py",
+      "sha256": "3c00cf713f69bf8f20977890d86907306e247860b9d6f8c7654b8f68d997157c",
+      "source_sha256": "3c00cf713f69bf8f20977890d86907306e247860b9d6f8c7654b8f68d997157c",
+      "changes": []
+    },
+    {
+      "source_path": "scripts/train_translation_multiseed.py",
+      "snapshot_path": "research/table5/code_snapshot/train_translation_multiseed.py",
+      "sha256": "70aae51983da449df6f3c0383733a4b8e0f1891c0a05392fb4fde4d4b4258f6d",
+      "source_sha256": "f465964938424a94931271c95fb594f570d754b5f332b052ea903c1c1bf4034a",
+      "changes": [
+        "Translate status-page labels and prose to English; numerical routines unchanged."
+      ]
+    },
+    {
+      "source_path": "scripts/study_v46_2_matched_five.py",
+      "snapshot_path": "research/table5/code_snapshot/study_v46_2_matched_five.py",
+      "sha256": "525c5f59534614076ca1e44eead292ece4c4f55116beef3a54aced3fd7625acd",
+      "source_sha256": "525c5f59534614076ca1e44eead292ece4c4f55116beef3a54aced3fd7625acd",
+      "changes": []
+    },
+    {
+      "source_path": "scripts/generate_v46_2_unified.py",
+      "snapshot_path": "research/table5/code_snapshot/generate_v46_2_unified.py",
+      "sha256": "a58c02439983c57c7b26712b5104b7daabceb273ac865146e7d845ca67abaa80",
+      "source_sha256": "a58c02439983c57c7b26712b5104b7daabceb273ac865146e7d845ca67abaa80",
+      "changes": []
+    },
+    {
+      "source_path": "scripts/study_v46_2_unified.py",
+      "snapshot_path": "research/table5/code_snapshot/study_v46_2_unified.py",
+      "sha256": "03257514f5d252bd02e2e3e0c673cb19d485c6fb75dcefca0dd00d2757f43eab",
+      "source_sha256": "03257514f5d252bd02e2e3e0c673cb19d485c6fb75dcefca0dd00d2757f43eab",
+      "changes": []
+    },
+    {
+      "source_path": "scripts/study_v46_2_updated_table.py",
+      "snapshot_path": "research/table5/code_snapshot/study_v46_2_updated_table.py",
+      "sha256": "627c30596fda3f7c9aa3de7c5d093899ebeb1ef343ef2c9c5d1aaa1cd7bf55da",
+      "source_sha256": "627c30596fda3f7c9aa3de7c5d093899ebeb1ef343ef2c9c5d1aaa1cd7bf55da",
+      "changes": []
+    }
+  ]
+}

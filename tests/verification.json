@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "test_command": "python -m unittest discover -s tests -v",
+  "tests_passed": 10,
+  "demo_command": "python scripts/generate_demo.py --output runs/demo --seed 271",
+  "demo_native_shape": [
+    256,
+    256
+  ],
+  "neural_training_or_inference_run": false,
+  "checkpoint_metadata_validation": "Four V45 checkpoints safely loaded with weights_only=True; ordinary state_dict/config; no neural forward.",
+  "algorithm_preservation": "All original geometry, structure, rendering, supervision, loss and backbone definitions are unchanged. Changed engine definitions only implement explicit path configuration, MPS-only execution, optional model factory and clipping of exact256 validation-window origins.",
+  "changed_engine_definitions": [
+    "find_project",
+    "TrainingConfig",
+    "validation_selections",
+    "run_epoch",
+    "train_material",
+    "predict_native"
+  ],
+  "removed_GFRP_helpers": "Historical research-only cache/CPUfixture/training helpers.",
+  "training_dataset_preflight": "Required files, native dimensions, unique ids, train/validation modes, background-group disjointness and validation variant availability checked before MPS probe.",
+  "wheel_build": "python -m pip wheel . --no-deps --no-build-isolation --no-cache-dir --wheel-dir runs/wheels"
+}

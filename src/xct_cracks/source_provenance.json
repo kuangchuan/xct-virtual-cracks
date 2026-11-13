@@ -1,0 +1,40 @@
+{
+  "method": "Original numerical synthesis/loss/backbone routines retained. Explicit packaging/configuration/MPS guards and a validation-window boundary fix are recorded; portable examples are separate from the dated paper experiments.",
+  "files": [
+    {
+      "file": "Optimized_Crack_Engine.py",
+      "original_source": "notebooks/optimized_four_material_training/Optimized_Crack_Engine.py",
+      "original_sha256": "deb9f719c09b883a6c2007db1deca87cbf9a13ab8a99376822f5e501cebb85f5",
+      "published_sha256": "5bd27defd6163327b9d6ce3e9fdc5a7e0bc504718063bbc29cc3e1b5e94125af",
+      "changes": "Package-relative imports; configurable data/project roots; MPS-only default and neural-entry guards; optional model factory; validation-window origins clipped for exact256 edge case. Numerical synthesis/loss/backbone routines retained."
+    },
+    {
+      "file": "image_guided_cracks.py",
+      "original_source": "notebooks/optimized_four_material_training/image_guided_cracks.py",
+      "original_sha256": "32224b61d824653b799a13fafa924124d59350f1387107f9b7647386672b415a",
+      "published_sha256": "32224b61d824653b799a13fafa924124d59350f1387107f9b7647386672b415a",
+      "changes": "Unchanged source."
+    },
+    {
+      "file": "robust_structure_cracks.py",
+      "original_source": "notebooks/optimized_four_material_training/robust_structure_cracks.py",
+      "original_sha256": "ce222b262dc63a4d0f9351752b1b0effe5addbdf6556303822fd215f3645fc4c",
+      "published_sha256": "220fcbf7cf33f22ec3f14ad4a300af30ba86afcdd52334c36c3ddb5011bb956b",
+      "changes": "Package-relative import."
+    },
+    {
+      "file": "xct_preview_io.py",
+      "original_source": "notebooks/optimized_four_material_training/xct_preview_io.py",
+      "original_sha256": "b6f1f0f380556f515d302343e732ad4b82ee2ea50bb63e7c92c9c382f6dc837b",
+      "published_sha256": "b6f1f0f380556f515d302343e732ad4b82ee2ea50bb63e7c92c9c382f6dc837b",
+      "changes": "Unchanged source."
+    },
+    {
+      "file": "GFRP_Context_Study.py",
+      "original_source": "notebooks/optimized_four_material_training/GFRP_Context_Study.py",
+      "original_sha256": "b1a3f89e83cbb8b63a28a829c0643af9707c15fe6dd4501562daaff8ed0ad085",
+      "published_sha256": "3e0c92b67e143b3d88246dd51248cedb9f218457e44abfc57862f3f57ee935d6",
+      "changes": "Unchanged local_channels and ContrastUNet definitions; unused historical cache, CPU fixture and training helpers omitted."
+    }
+  ]
+}

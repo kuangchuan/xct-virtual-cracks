@@ -1,0 +1,32 @@
+{
+  "model_family": "V45 synthetic-only development models",
+  "manuscript_outputs": [
+    "Table 4",
+    "Figures 6\u20138",
+    "Figures S1\u2013S5"
+  ],
+  "models": {
+    "mortar": {
+      "file": "models/v45/mortar.pt",
+      "sha256": "62aa008d134e3c9a814177cc0c7970156f1dfd9629dc150043f678f112b189bd",
+      "bytes": 523874
+    },
+    "recycled_mortar": {
+      "file": "models/v45/recycled_mortar.pt",
+      "sha256": "391e62ba7513af3693fbaa1a0ea78c364b0ae2bacae161c52d022fb7a8d8a71d",
+      "bytes": 523874
+    },
+    "gfrp": {
+      "file": "models/v45/gfrp.pt",
+      "sha256": "463b04f32eff4e946efe2355a3d94ff7b6f11bdcad40a053b6074b1eb3117788",
+      "bytes": 524770
+    },
+    "sic": {
+      "file": "models/v45/sic.pt",
+      "sha256": "80f010393b800ae4ed7704a256888ccdd700b399b4c740fd045f00a1184c86d2",
+      "bytes": 523874
+    }
+  },
+  "input": "Native single-channel normalised XCT; GFRP additionally computes local contrast channels internally.",
+  "comparison": "These are not the separate Table 5 model weights."
+}

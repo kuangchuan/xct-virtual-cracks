@@ -1,0 +1,79 @@
+{
+  "format_version": 1,
+  "language": "en-GB",
+  "prepared_utc": "2026-11-13T19:45:30.582453+00:00",
+  "figures": [
+    {
+      "file": "docs/assets/synthesis-workflow.png",
+      "sha256": "6ea5bcf45e326abfa268bf02fdc88d0ed0c0d167a4cc4d8ba45fbd3bc95928b0",
+      "source_version": "V45; retained unchanged in vn46",
+      "source_anchor": "Figure 1",
+      "source_member": "word/media/image1.png",
+      "caption": "Measured XCT, structural field, fractional coverage and synthetic XCT.",
+      "scope": "Generation workflow retained from V45; not a Table 5 prediction.",
+      "pixels_unchanged": true,
+      "visually_reviewed": true
+    },
+    {
+      "file": "docs/assets/geometric-encoding-fidelity.png",
+      "sha256": "63893eab5434cf13f12ed36a63d3ceb68fc532269c0101e7ba5c7e55e0792612",
+      "source_version": "V45; retained unchanged in vn46",
+      "source_anchor": "Figure 5",
+      "source_member": "word/media/image5.png",
+      "caption": "Geometric encoding fidelity across opening widths and sampling levels.",
+      "scope": "Geometric fidelity, not a claim of improved learned segmentation.",
+      "pixels_unchanged": true,
+      "visually_reviewed": true
+    },
+    {
+      "file": "docs/assets/synthetic-segmentation-examples.png",
+      "sha256": "d7a0ab12ac0d13cd5e98c89aa052fdf4e7356821d8d335db9e0aaa850e845717",
+      "source_version": "V45; retained unchanged in vn46",
+      "source_anchor": "Figure 7 / Table 4",
+      "source_member": "word/media/image7.png",
+      "caption": "Synthetic validation examples from the original development models.",
+      "scope": "Original V45 development weights; not the newer Table 5 adaptation models.",
+      "pixels_unchanged": true,
+      "visually_reviewed": true
+    },
+    {
+      "file": "docs/assets/real-image-transfer-examples.png",
+      "sha256": "db9b45aba62f6441102af733bdc127989cc5af402a804871a6d04dc8750045ac",
+      "source_version": "V45; retained unchanged in vn46",
+      "source_anchor": "Figure 8 / Table 4",
+      "source_member": "word/media/image8.png",
+      "caption": "Real damaged-state XCT and predictions from the original synthetic-only development models.",
+      "scope": "Qualitative transfer examples from original V45 weights; not the newer Table 5 adaptation models.",
+      "pixels_unchanged": true,
+      "visually_reviewed": true
+    },
+    {
+      "file": "docs/assets/validation-miou-all-five.png",
+      "vector_file": "docs/assets/validation-miou-all-five.svg",
+      "sha256": "6600678294f6e5e0ffe92c5badb985700e1f50a407ce0901a73bc793c15cc14c",
+      "source_version": "vn46 Table 5 / V46.2 updated-generator comparison",
+      "experiment_id": "20261113_updated14_val6_table_v1",
+      "data_file": "results/validation_miou_all_five.csv",
+      "seedwise_data_file": "results/seedwise_miou.csv",
+      "statistics": "Arithmetic mean \u00b1 sample standard deviation across all five independent seeds; no run exclusions.",
+      "scope": "Full-image validation mIoU; the same six images per material select checkpoints and stopping. This is not an independent test.",
+      "axes": "mIoU range 0.45\u20130.80, explicitly labelled; four visible borders.",
+      "visually_reviewed": true,
+      "visual_review": "All four panels, error bars, numeric labels, four borders, labels below the axes and the separate shared legend are legible with no clipping or overlap."
+    }
+  ],
+  "results": [
+    {
+      "file": "results/validation_miou_all_five.csv",
+      "sha256": "d585fd498b989f9800dfa324bc43546860c287f62297ae9fde0cfcc512cbbe74",
+      "rows": 20
+    },
+    {
+      "file": "results/seedwise_miou.csv",
+      "sha256": "e1dae1fb54c05b0d7fe9832c978daea7a79d8cdcaf6fd119a3b8b33d29dc63a5",
+      "rows": 100
+    }
+  ],
+  "model_correspondence": "Figures retained from V45 show original development models and generator analyses. The new mIoU comparison shows a separate updated-generator adaptation study with the same backbone family; it does not reuse the displayed Figure 7/8 predictions as Table 5 results.",
+  "exports_contain_only_miou_performance": "Separate class IoU, confusion counts, precision, recall, Dice and excluded-run summaries are omitted."
+}
